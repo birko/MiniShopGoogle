@@ -1,0 +1,24 @@
+{
+    "name": "birko/minishop-google",
+    "type": "symfony-bundle",
+    "description": "Google support for MiniShop Site",
+    "keywords": ["birko", "shop", "minishop", "symfony2", "google"], 
+    "license": "MIT", 
+    "authors": [ 
+        { 
+            "name": "Ing. František Bereň", 
+            "email": "birko@live.com" 
+        } 
+    ],
+    "autoload": {
+        "psr-0": {
+            "Core": ""
+        }
+    },
+    "require": {
+       "birko/google": "dev-master"
+    },
+
+    "target-dir": ""
+}
+
