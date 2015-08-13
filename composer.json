@@ -16,7 +16,6 @@
         }
     },
     "require": {
-       "birko/google": "dev-master"
     },
 
     "target-dir": ""
