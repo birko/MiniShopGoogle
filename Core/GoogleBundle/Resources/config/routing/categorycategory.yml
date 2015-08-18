@@ -1,0 +1,30 @@
+googlecategorycategory:
+    path:     /google
+    defaults: { _controller: "CoreGoogleBundle:CategoryCategory:index" }
+
+googlecategorycategory_show:
+    path:     /google/{id}/show
+    defaults: { _controller: "CoreGoogleBundle:CategoryCategory:show" }
+
+googlecategorycategory_new:
+    path:     /{category}/google/new
+    defaults: { _controller: "CoreGoogleBundle:CategoryCategory:new" }
+
+googlecategorycategory_create:
+    path:     /{category}/google/create
+    defaults: { _controller: "CoreGoogleBundle:CategoryCategory:create" }
+    requirements: { _method: post }
+
+googlecategorycategory_edit:
+    path:     /google/{id}/edit
+    defaults: { _controller: "CoreGoogleBundle:CategoryCategory:edit" }
+
+googlecategorycategory_update:
+    path:     /google/{id}/update
+    defaults: { _controller: "CoreGoogleBundle:CategoryCategory:update" }
+    requirements: { _method: post|put }
+
+googlecategorycategory_delete:
+    path:     /google/{id}/delete
+    defaults: { _controller: "CoreGoogleBundle:CategoryCategory:delete" }
+    requirements: { _method: post|delete }

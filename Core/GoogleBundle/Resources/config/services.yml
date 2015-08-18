@@ -1,0 +1,4 @@
+parameters:
+#    core_heureka.example.class: Core\GoogleBundle\Example
+
+services:

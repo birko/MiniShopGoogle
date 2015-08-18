@@ -1,0 +1,15 @@
+{% extends '::admin.html.twig' %}
+{% block body %}
+<h1>Google {% trans %}Category edit{% endtrans%}</h1>
+{{ form_start(edit_form) }}
+{{ form_widget(edit_form) }}
+<p>
+    <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-ok"></span> {% trans %}Edit{% endtrans %}</button>
+    <a href="{{ path('category') }}"> {% trans %}Back to the list{% endtrans %}</a>
+</p>
+{{ form_end(edit_form) }}
+{{ form_start(delete_form) }}
+{{ form_widget(delete_form) }}
+<button type="submit" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> {% trans %}Delete{% endtrans %}</button>
+{{ form_end(delete_form) }}
+{% endblock %}

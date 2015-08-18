@@ -1,0 +1,30 @@
+googleproductcategory:
+    path:     /google/{category}
+    defaults: { _controller: "CoreGoogleBundle:ProductCategory:index", category: ~  }
+
+googleproductcategory_show:
+    path:     /google/{id}/show
+    defaults: { _controller: "CoreGoogleBundle:ProductCategory:show" }
+
+googleproductcategory_new:
+    path:     /{product}/google/new/{category}
+    defaults: { _controller: "CoreGoogleBundle:ProductCategory:new", category: ~ }
+
+googleproductcategory_create:
+    path:     /{product}/google/create/{category}
+    defaults: { _controller: "CoreGoogleBundle:ProductCategory:create", category: ~ }
+    requirements: { _method: post }
+
+googleproductcategory_edit:
+    path:     /google/{id}/edit/{category}
+    defaults: { _controller: "CoreGoogleBundle:ProductCategory:edit", category: ~ }
+
+googleproductcategory_update:
+    path:     /google/{id}/update/{category}
+    defaults: { _controller: "CoreGoogleBundle:ProductCategory:update", category: ~ }
+    requirements: { _method: post|put }
+
+googleproductcategory_delete:
+    path:     /google/{id}/delete/{category}
+    defaults: { _controller: "CoreGoogleBundle:ProductCategory:delete", category: ~ }
+    requirements: { _method: post|delete }

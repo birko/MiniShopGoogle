@@ -1,0 +1,15 @@
+core_google_googleproductcategory:
+    resource: "@CoreGoogleBundle/Resources/config/routing/productcategory.yml"
+    prefix:   /admin/product
+
+core_google_googlecategorycategory:
+    resource: "@CoreGoogleBundle/Resources/config/routing/categorycategory.yml"
+    prefix:   /admin/category
+
+core_google_export:
+    pattern:  /google/export
+    defaults: { _controller: CoreGoogleBundle:Google:export }
+
+core_google_sekcie:
+    pattern:  /google/sekcie
+    defaults: { _controller: CoreGoogleBundle:Google:parseSekcie }

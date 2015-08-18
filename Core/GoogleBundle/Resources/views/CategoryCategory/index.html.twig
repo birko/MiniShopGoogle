@@ -1,0 +1,27 @@
+{% extends '::admin.html.twig' %}
+
+{% block body -%}
+    <h1>{%trans%}Category list{% endtrans %}</h1>
+    {{ knp_pagination_render(entities)}}
+    <table class="records_list table table-striped table-condensed">
+        <thead>
+            <tr>
+                <th>{% trans %}Category{% endtrans %}</th>
+                <th>{% trans %}Google{% endtrans %}</th>
+                <th>{% trans %}Actions{% endtrans%}</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.category.title }}</td>
+                <td>{{ entity.googleCategory }}</td>
+                <td>
+                    <a href="{{ path('googlecategorycategory_edit', { 'id': entity.id }) }}" class="btn btn-warning btn-xs"><span class="glyphicon glyhicon-edit"></span> {%trans%}Edit{%endtrans%}</a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    {{ knp_pagination_render(entities)}}
+{% endblock %}
